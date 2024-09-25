@@ -1,0 +1,151 @@
+/* General Styles */
+body, h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #f4f4f4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+.nav-links li {
+  margin-left: 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.nav-links a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+.animated-title {
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('background1.png') no-repeat center center/cover;
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
+  margin-top: 60px; /* offset for navbar */
+}
+.hero-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero-section p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+.btn {
+  padding: 10px 30px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* About, Services Section */
+.about-section, .services-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service-box {
+  width: 30%;
+  margin: 20px 0;
+}
+
+/* Team Section */
+.team-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.team-member {
+  margin: 20px;
+  text-align: center;
+}
+.team-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #007BFF;
+}
+
+/* Stats Section */
+.stats-section {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.stat-box {
+  margin: 20px;
+}
+.stat-box h3 {
+  font-size: 36px;
+  color: #007BFF;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  padding: 10px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
