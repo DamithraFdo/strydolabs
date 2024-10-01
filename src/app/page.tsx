@@ -156,8 +156,8 @@ export default function Home() {
 
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90">
-            <h2>Meet Our Team</h2>
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90 text-white">
+            <h2 className="mb-4">Meet Our Team</h2>
             <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
               <Card className="p-4">
                 <CardContent>
@@ -182,7 +182,7 @@ export default function Home() {
                   <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
-                  <a className="text-black text-xl">Jovahir</a>
+                  <a className="text-black text-xl">Javohir</a>
                   <a>App Developer</a>
                 </CardDescription>
               </Card>
