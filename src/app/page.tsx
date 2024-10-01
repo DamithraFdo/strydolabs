@@ -61,7 +61,7 @@ export default function Home() {
                   <CardTitle>IoT Solutions</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/iot.png" alt="IoT Solutions" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Electracker.jpeg" alt="IoT Solutions" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Custom IoT applications to enhance efficiency.</CardDescription>
@@ -72,7 +72,7 @@ export default function Home() {
                   <CardTitle>Robotics & AI</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/robotics.png" alt="Robotics & AI" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Robot.JPG" alt="Robotics & AI" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Advanced robotic systems for diverse industries.</CardDescription>
@@ -83,7 +83,7 @@ export default function Home() {
                   <CardTitle>Software Development</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/software.png" alt="Software Development" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Software.jpg" alt="Software Development" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Creative software solutions for all platforms.</CardDescription>
