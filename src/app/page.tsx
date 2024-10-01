@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ui/ContactUs";
+import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -23,7 +24,7 @@ export default function Home() {
               <h2 className="text-white">Innovating Future Technology</h2>
               <p className="text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
               <Link href={'/contact'}>
-                <Button className='mt-3' type='submit'>Get Started</Button>
+                <Button className='mt-10 bg-transparent text-white font-bold w-48 h-16 text-lg' variant={'outline'}>Get Started</Button>
               </Link>
             </div>
           </div>
@@ -45,7 +46,7 @@ export default function Home() {
               </p>
             </div>
             <Link className="mt-5" href={'/about'}>
-              <Button type='submit'>Learn More</Button>
+              <Button type='submit' className=" text-white font-bold w-48 h-16 text-lg">Learn More</Button>
             </Link>
           </div>
         </section>
@@ -60,7 +61,7 @@ export default function Home() {
                   <CardTitle>IoT Solutions</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/iot.png" alt="IoT Solutions" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Electracker.jpeg" alt="IoT Solutions" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Custom IoT applications to enhance efficiency.</CardDescription>
@@ -71,7 +72,7 @@ export default function Home() {
                   <CardTitle>Robotics & AI</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/robotics.png" alt="Robotics & AI" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Robot.JPG" alt="Robotics & AI" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Advanced robotic systems for diverse industries.</CardDescription>
@@ -82,7 +83,7 @@ export default function Home() {
                   <CardTitle>Software Development</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Image className="hover:scale-105" src="/img/software.png" alt="Software Development" width={200} height={200} />
+                  <Image className="hover:scale-105" src="/img/Software.jpg" alt="Software Development" width={200} height={200} />
                 </CardContent>
                 <CardFooter>
                   <CardDescription>Creative software solutions for all platforms.</CardDescription>
@@ -92,14 +93,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimoni Section */}
+        <section id="testimonials" className="snap-always snap-center">
+          <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
+            <h2>What Our Clients Say</h2>
+            <TestimonialSlider />
+          </div>
+        </section>
+
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
-            <h2>Meet Our Team</h2>
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90 text-white">
+            <h2 className="mb-4">Meet Our Team</h2>
             <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Damithra"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Damithra Fernando</a>
@@ -108,19 +117,19 @@ export default function Home() {
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Satoshi"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Satoshi" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
-                  <a className="text-black text-xl">Satoshi</a>
-                  <a>Robotics Engineer</a>
+                  <a className="text-black text-xl">Anjar Tiyo</a>
+                  <a>CTO</a>
                 </CardDescription>
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Jovahir"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
-                  <a className="text-black text-xl">Jovahir</a>
+                  <a className="text-black text-xl">Javohir</a>
                   <a>App Developer</a>
                 </CardDescription>
               </Card>
@@ -128,26 +137,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <!-- Statistics Section --> */}
-        <section id="stats" className="snap-always snap-center text-white">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90">
-            <h2 className="text-4xl font-[700] my-3 ">Our Achievements</h2>
-            <div className="flex flex-row gap-60 text-center align-middle justify-center p-4 mx-4">
-              <div className="stat-box">
-                <h3><span id="projects-done">15+</span></h3>
-                <p>Projects Done</p>
-              </div>
-              <div className="stat-box">
-                <h3><span id="clients">20+</span></h3>
-                <p>Clients</p>
-              </div>
-              <div className="stat-box">
-                <h3><span id="awards">6+</span></h3>
-                <p>Awards Won</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <section id="contact" className="snap-always snap-center">
           <div className="flex flex-col w-1/3 text-left align-middle h-screen justify-center mx-8 my-auto">
