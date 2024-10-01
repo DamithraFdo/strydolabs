@@ -99,7 +99,7 @@ export default function Home() {
             <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Damithra"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/damithra.png" width={200} height={200} alt="Damithra"/>
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Damithra Fernando</a>
@@ -111,13 +111,13 @@ export default function Home() {
                   <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Satoshi"/>
                 </CardContent>
                 <CardDescription className="flex flex-col">
-                  <a className="text-black text-xl">Satoshi</a>
-                  <a>Robotics Engineer</a>
+                  <a className="text-black text-xl">Anjar Tiyo</a>
+                  <a>CTO</a>
                 </CardDescription>
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Jovahir"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir"/>
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Jovahir</a>
