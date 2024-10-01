@@ -24,7 +24,7 @@ export default function Home() {
               <h2 className="text-white">Innovating Future Technology</h2>
               <p className="text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
               <Link href={'/contact'}>
-                <Button className='mt-3' type='submit'>Get Started</Button>
+                <Button className='mt-10 bg-transparent text-white font-bold w-48 h-16 text-lg' variant={'outline'}>Get Started</Button>
               </Link>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
               </p>
             </div>
             <Link className="mt-5" href={'/about'}>
-              <Button type='submit'>Learn More</Button>
+              <Button type='submit' className=" text-white font-bold w-48 h-16 text-lg">Learn More</Button>
             </Link>
           </div>
         </section>
@@ -95,7 +95,7 @@ export default function Home() {
 
         {/* Testimoni Section */}
         <section id="testimonials" className="snap-always snap-center">
-          <div className="flex flex-col gap-4 text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
+          <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
             <h2>What Our Clients Say</h2>
             <TestimonialSlider />
           </div>

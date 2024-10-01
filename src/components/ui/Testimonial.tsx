@@ -68,7 +68,7 @@ const TestimonialSlider = () => {
 
     return (
         <div className="relative w-full max-w-4xl
-                    mx-auto py-12 p-6 rounded-lg
+                    mx-auto py-4 p-6 rounded-lg
                     ">
             <div className="overflow-hidden">
                 <div className="flex transition-transform 
