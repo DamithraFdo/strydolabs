@@ -2,12 +2,9 @@ import React from 'react'
 import { Button } from './button'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card'
 import { Input } from './input'
-import { Label } from './label'
 import { Textarea } from './textarea'
 
-type Props = {}
-
-function ContactUs({}: Props) {
+function ContactUs() {
   return (
     <Card className="w-full">
       <CardHeader>
