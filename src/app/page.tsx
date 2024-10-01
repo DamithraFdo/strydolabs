@@ -1,8 +1,62 @@
 import ContactUs from "@/components/ui/ContactUs";
+import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+
+const testimonials = [
+  {
+    quote:
+      "Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.",
+    name: "Rose Roberson",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation. Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.",
+    name: "Chace Rodgers",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor.",
+    name: "Cornelius Sheppard",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Consectetur voluptate pariatur dolore laboris. Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.",
+    name: "Chace Rodgers",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptate pariatur dolore laboris. Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.",
+    name: "Cornelius Sheppard",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Consectetur voluptate pariatur dolore laboris. Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.",
+    name: "Chace Rodgers",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+  {
+    quote:
+      "Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor.",
+    name: "Cornelius Sheppard",
+    role: "CEO at Company",
+    imgSrc: "/img/dummy.jpg",
+  },
+];
 
 export default function Home() {
   return (
@@ -92,14 +146,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimoni Section */}
+        <section id="testimonials" className="snap-always snap-center">
+          <div className="flex flex-col gap-4 text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
+            <h2>What Our Clients Say</h2>
+            <TestimonialSlider />
+          </div>
+        </section>
+
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90">
             <h2>Meet Our Team</h2>
             <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Damithra Fernando</a>
@@ -108,7 +170,7 @@ export default function Home() {
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Satoshi"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Satoshi" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Anjar Tiyo</a>
@@ -117,7 +179,7 @@ export default function Home() {
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir"/>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Jovahir</a>
@@ -128,26 +190,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <!-- Statistics Section --> */}
-        <section id="stats" className="snap-always snap-center text-white">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90">
-            <h2 className="text-4xl font-[700] my-3 ">Our Achievements</h2>
-            <div className="flex flex-row gap-60 text-center align-middle justify-center p-4 mx-4">
-              <div className="stat-box">
-                <h3><span id="projects-done">15+</span></h3>
-                <p>Projects Done</p>
-              </div>
-              <div className="stat-box">
-                <h3><span id="clients">20+</span></h3>
-                <p>Clients</p>
-              </div>
-              <div className="stat-box">
-                <h3><span id="awards">6+</span></h3>
-                <p>Awards Won</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <section id="contact" className="snap-always snap-center">
           <div className="flex flex-col w-1/3 text-left align-middle h-screen justify-center mx-8 my-auto">
