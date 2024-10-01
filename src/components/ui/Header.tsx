@@ -9,7 +9,7 @@ type Props = {}
 function Header({ }: Props) {
     return (
         <>
-            <nav className="w-full h-auto p-4 bg-black bg-opacity-50" id='navbar'>
+            <div className="w-full h-[15vh] p-4 bg-black bg-opacity-50 top-0" id='navbar'>
                 <div className="container flex flex-row justify-between align-middle items-center">
                     <Link href={'/'}>
                         <Image src="/img/strydo-logo.svg" alt="Strydo Labs Logo" width={75} height={75} />
@@ -47,7 +47,7 @@ function Header({ }: Props) {
                         </Link>
                     </ul>
                 </div>
-            </nav>
+            </div>
         </>
     )
 }
