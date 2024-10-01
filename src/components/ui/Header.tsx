@@ -1,21 +1,50 @@
 import Link from 'next/link'
 import React from 'react'
 
+import { Button } from './button';
+import Image from 'next/image';
+
 type Props = {}
 
 function Header({ }: Props) {
     return (
         <>
-            <nav className="w-full h-[15%] my-4 p-4" id='navbar'>
-                <div className="container flex flex-row justify-between">
-                    <h1 className="animated-title">Strydo Labs</h1>
-                    <ul className="nav-links flex flex-row gap-4">
-                        <Link className="" href="/">Home</Link>
-                        <Link href="/about">About Us</Link>
-                        <Link href="/services">Services</Link>
-                        <Link href="/projects">Projects</Link>
-                        <Link href="/team">Team</Link>
-                        <Link href="/contact">Contact</Link>
+            <nav className="w-full h-auto p-4 bg-black bg-opacity-50" id='navbar'>
+                <div className="container flex flex-row justify-between align-middle items-center">
+                    <Link href={'/'}>
+                        <Image src="/img/strydo-logo.svg" alt="Strydo Labs Logo" width={75} height={75} />
+                    </Link>
+                    <ul className="nav-links flex flex-row gap-4 text-white font-bold">
+                        <Link className="" href="/">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                Home
+                            </Button>
+                        </Link>
+                        <Link className="" href="/about">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                About Us
+                            </Button>
+                        </Link>
+                        <Link className="" href="/about">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                Services
+                            </Button>
+                        </Link>
+                        <Link className="" href="/about">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                Projects
+                            </Button>
+                        </Link>
+                        <Link className="" href="/about">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                Teams
+                            </Button>
+                        </Link>
+                        <Link className="" href="/about">
+                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
+                                Contact
+                            </Button>
+                        </Link>
                     </ul>
                 </div>
             </nav>

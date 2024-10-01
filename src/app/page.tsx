@@ -7,11 +7,20 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col">
+        <video
+          muted
+          loop
+          autoPlay
+          className="fixed -top-2 left-0 min-w-full min-h-full -z-50 object-cover bg-black"
+        >
+          <source src='/img/bg-robo.mp4' type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div id="hero">
-          <div className="flex flex-col h-[90vh] bg-slate-400 gap-3 text-center align-middle justify-center p-4">
+          <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-50">
             <div className="my-[60px]">
-              <h2>Innovating Future Technology</h2>
-              <p className="text-[18px] mt-2">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
+              <h2 className="text-white">Innovating Future Technology</h2>
+              <p className="text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
               <Link href={'/contact'}>
                 <Button className='mt-3' type='submit'>Get Started</Button>
               </Link>
@@ -21,7 +30,7 @@ export default function Home() {
 
         {/* About Us Section */}
         <section id="about">
-          <div className="flex flex-col my-3 text-center align-middle h-screen justify-center p-4">
+          <div className="flex flex-col text-center align-middle h-screen justify-center p-4 bg-white">
             <h2>About Strydo Labs</h2>
             <p>Strydo Labs is a tech startup specializing in IoT, software, and hardware development. We innovate in robotics, embedded systems, and game development.</p>
             <Link href={'/about'}>
@@ -32,7 +41,7 @@ export default function Home() {
 
         {/* <!-- Services Section --> */}
         <section id="services" className="services-section">
-          <div className="flex flex-col my-3 text-center align-middle h-screen justify-center bg-slate-200 p-4">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200 p-4">
             <h2>Our Services</h2>
             <div className="services-container flex flex-row text-center align-center gap-3 justify-center my-3">
               <div className="service-box">
@@ -53,7 +62,7 @@ export default function Home() {
 
         {/* <!-- Team Section --> */}
         <section id="team">
-          <div className="flex flex-col my-3 text-center align-middle h-screen justify-center">
+          <div className="flex flex-col text-center align-middle h-screen justify-center">
             <h2>Meet Our Team</h2>
             <div className="flex flex-row gap-5 text-center align-middle justify-between p-4">
               <div className="team-member">
@@ -77,7 +86,7 @@ export default function Home() {
 
         {/* <!-- Statistics Section --> */}
         <section id="stats">
-          <div className="flex flex-col my-3 text-center align-middle h-screen justify-center bg-slate-200">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200">
             <h2 className="text-4xl font-[700] my-3">Our Achievements</h2>
             <div className="flex flex-row gap-5 text-center align-middle justify-between p-4 mx-4">
               <div className="stat-box">

@@ -3,6 +3,7 @@ import { Button } from './button'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card'
 import { Input } from './input'
 import { Label } from './label'
+import { Textarea } from './textarea'
 
 type Props = {}
 
@@ -20,13 +21,12 @@ function ContactUs({}: Props) {
               <Input id="name" placeholder="Full Name" />
               <Input id="email" type="email" placeholder="Email Address" />
               <Input id="phone" type="tel" placeholder="Phone Number" />
-              <Input id="message" placeholder="Message" />
+              <Textarea id="message" placeholder="Message" />
             </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
         <Button type='submit'>Submit</Button>
       </CardFooter>
     </Card>
