@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-
 import { Button } from './button';
 import Image from 'next/image';
 
-type Props = {}
-
-function Header({ }: Props) {
+function Header() {
     return (
         <>
             <div className="w-full h-[15vh] p-4 absolute top-0 mix-blend-difference" id='navbar'>

@@ -1,5 +1,4 @@
 import ContactUs from "@/components/ui/ContactUs";
-import Footer from "@/components/ui/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -36,7 +35,7 @@ export default function Home() {
             <h2>About Strydo Labs</h2>
             <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify">
               <p>
-                At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. As a technology-driven startup, our mission is to push the boundaries of what's possible by blending the physical and digital worlds. From designing intelligent robotic systems to building sophisticated IoT devices, we deliver high-performance products that meet the evolving needs of modern industries.
+                At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. As a technology-driven startup, our mission is to push the boundaries of what iss possible by blending the physical and digital worlds. From designing intelligent robotic systems to building sophisticated IoT devices, we deliver high-performance products that meet the evolving needs of modern industries.
               </p>
               <p>
                 In addition to our core focus on hardware and robotics, we offer expert services in software development and game design, creating engaging digital experiences and streamlined solutions for businesses and consumers alike. With a commitment to innovation, quality, and precision, we strive to create technology that not only solves problems but also drives the future of automation and connectivity.
@@ -97,22 +96,34 @@ export default function Home() {
         <section id="team" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
             <h2>Meet Our Team</h2>
-            <div className="flex flex-row gap-5 text-center align-middle justify-between p-4">
-              <div className="team-member">
-                <Image src="/Images/damithra.png" width={200} height={200} alt="Damithra" className="team-photo" />
-                <h3>Damithra Fernando</h3>
-                <p>Founder & CEO, Robotics and Automation</p>
-              </div>
-              <div className="team-member">
-                <Image src="/satoshi.jpg" width={200} height={200} alt="Satoshi" className="team-photo" />
-                <h3>Satoshi</h3>
-                <p>Robotics Engineer</p>
-              </div>
-              <div className="team-member">
-                <Image src="/Images/Jovahir.jpeg" width={200} height={200} alt="Jovahir" className="team-photo" />
-                <h3>Jovahir</h3>
-                <p>App Developer</p>
-              </div>
+            <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
+              <Card className="p-4">
+                <CardContent>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Damithra"/>
+                </CardContent>
+                <CardDescription className="flex flex-col">
+                  <a className="text-black text-xl">Damithra Fernando</a>
+                  <a>Founder & CEO</a>
+                </CardDescription>
+              </Card>
+              <Card className="p-4">
+                <CardContent>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Satoshi"/>
+                </CardContent>
+                <CardDescription className="flex flex-col">
+                  <a className="text-black text-xl">Satoshi</a>
+                  <a>Robotics Engineer</a>
+                </CardDescription>
+              </Card>
+              <Card className="p-4">
+                <CardContent>
+                  <Image className="hover:scale-105 rounded-lg" src="/img/dummy.jpeg" width={200} height={200} alt="Jovahir"/>
+                </CardContent>
+                <CardDescription className="flex flex-col">
+                  <a className="text-black text-xl">Jovahir</a>
+                  <a>App Developer</a>
+                </CardDescription>
+              </Card>
             </div>
           </div>
         </section>
@@ -121,7 +132,7 @@ export default function Home() {
         <section id="stats" className="snap-always snap-center text-white">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-90">
             <h2 className="text-4xl font-[700] my-3 ">Our Achievements</h2>
-            <div className="flex flex-row gap-5 text-center align-middle justify-between p-4 mx-4">
+            <div className="flex flex-row gap-60 text-center align-middle justify-center p-4 mx-4">
               <div className="stat-box">
                 <h3><span id="projects-done">15+</span></h3>
                 <p>Projects Done</p>
@@ -139,7 +150,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="snap-always snap-center">
-          <div className="flex flex-col w-2/3 text-center align-middle h-screen justify-center mx-auto my-auto">
+          <div className="flex flex-col w-1/3 text-left align-middle h-screen justify-center mx-8 my-auto">
             <ContactUs />
           </div>
           <div className="p-4">
