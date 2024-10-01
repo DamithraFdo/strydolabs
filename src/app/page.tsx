@@ -5,18 +5,18 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
       <section className="flex flex-col">
         <video
           muted
           loop
           autoPlay
-          className="fixed -top-2 left-0 min-w-full min-h-full -z-50 object-cover bg-black"
+          className="fixed -top-2 left-0 w-full h-full -z-50 object-cover bg-black"
         >
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div id="hero">
+        <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-50">
             <div className="my-[60px]">
               <h2 className="text-white">Innovating Future Technology</h2>
@@ -26,13 +26,23 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* About Us Section */}
-        <section id="about">
+        <section id="about" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center p-4 bg-white">
             <h2>About Strydo Labs</h2>
-            <p>Strydo Labs is a tech startup specializing in IoT, software, and hardware development. We innovate in robotics, embedded systems, and game development.</p>
+            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify">
+              <p>
+                At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. As a technology-driven startup, our mission is to push the boundaries of what's possible by blending the physical and digital worlds. From designing intelligent robotic systems to building sophisticated IoT devices, we deliver high-performance products that meet the evolving needs of modern industries.
+              </p>
+              <p>
+                In addition to our core focus on hardware and robotics, we offer expert services in software development and game design, creating engaging digital experiences and streamlined solutions for businesses and consumers alike. With a commitment to innovation, quality, and precision, we strive to create technology that not only solves problems but also drives the future of automation and connectivity.
+              </p>
+              <p className="font-bold">
+                At Strydo Labs, we are not just developing products—we are building the future.
+              </p>
+            </div>
             <Link href={'/about'}>
               <Button className='mt-3' type='submit'>Learn More</Button>
             </Link>
@@ -40,7 +50,7 @@ export default function Home() {
         </section>
 
         {/* <!-- Services Section --> */}
-        <section id="services" className="services-section">
+        <section id="services" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200 p-4">
             <h2>Our Services</h2>
             <div className="services-container flex flex-row text-center align-center gap-3 justify-center my-3">
@@ -61,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* <!-- Team Section --> */}
-        <section id="team">
+        <section id="team" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center">
             <h2>Meet Our Team</h2>
             <div className="flex flex-row gap-5 text-center align-middle justify-between p-4">
@@ -85,7 +95,7 @@ export default function Home() {
         </section>
 
         {/* <!-- Statistics Section --> */}
-        <section id="stats">
+        <section id="stats" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-slate-200">
             <h2 className="text-4xl font-[700] my-3">Our Achievements</h2>
             <div className="flex flex-row gap-5 text-center align-middle justify-between p-4 mx-4">
@@ -105,7 +115,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" className="snap-always snap-center">
           <div className="flex flex-col w-2/3 text-center align-middle h-screen justify-center mx-auto my-auto">
             <ContactUs />
           </div>
@@ -113,6 +123,6 @@ export default function Home() {
       </section>
 
 
-    </>
+    </div>
   );
 }
