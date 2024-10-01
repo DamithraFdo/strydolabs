@@ -20,6 +20,8 @@ body, h1, h2, h3, p {
   width: 100%;
   top: 0;
   z-index: 1000;
+
+  overflow: auto;
 }
 .nav-links {
   list-style: none;
@@ -49,7 +51,7 @@ body, h1, h2, h3, p {
 
 /* Hero Section */
 .hero-section {
-  background: url('background1.png') no-repeat center center/cover;
+  background: url('background2.gif') no-repeat center center/cover;
   text-align: center;
   padding: 150px 0;
   color: #fff;
@@ -149,3 +151,17 @@ body, h1, h2, h3, p {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
