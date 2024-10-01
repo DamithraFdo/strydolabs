@@ -2,7 +2,7 @@ import ContactUs from "@/components/ui/ContactUs";
 import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
