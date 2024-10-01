@@ -1,7 +1,8 @@
 import ContactUs from "@/components/ui/ContactUs";
+import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -55,41 +56,7 @@ export default function Home() {
         <section id="services" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4">
             <h2 className="text-white">Our Services</h2>
-            <div className="flex flex-row text-center align-center gap-3 justify-center my-3">
-              <Card className="iot-card">
-                <CardHeader>
-                  <CardTitle>IoT Solutions</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Image className="hover:scale-105" src="/img/Electracker.jpeg" alt="IoT Solutions" width={200} height={200} />
-                </CardContent>
-                <CardFooter>
-                  <CardDescription>Custom IoT applications to enhance efficiency.</CardDescription>
-                </CardFooter>
-              </Card>
-              <Card className="robotics-card">
-                <CardHeader>
-                  <CardTitle>Robotics & AI</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Image className="hover:scale-105" src="/img/Robot.JPG" alt="Robotics & AI" width={200} height={200} />
-                </CardContent>
-                <CardFooter>
-                  <CardDescription>Advanced robotic systems for diverse industries.</CardDescription>
-                </CardFooter>
-              </Card>
-              <Card className="software-card">
-                <CardHeader>
-                  <CardTitle>Software Development</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Image className="hover:scale-105" src="/img/Software.jpg" alt="Software Development" width={200} height={200} />
-                </CardContent>
-                <CardFooter>
-                  <CardDescription>Creative software solutions for all platforms.</CardDescription>
-                </CardFooter>
-              </Card>
-            </div>
+            <Services />
           </div>
         </section>
 
@@ -108,7 +75,7 @@ export default function Home() {
             <div className="flex flex-row gap-10 text-center align-middle justify-center p-4">
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra" />
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.jpeg" width={200} height={200} alt="Damithra" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Damithra Fernando</a>
@@ -117,7 +84,7 @@ export default function Home() {
               </Card>
               <Card className="p-4">
                 <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Satoshi" />
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jpeg" width={200} height={200} alt="Satoshi" />
                 </CardContent>
                 <CardDescription className="flex flex-col">
                   <a className="text-black text-xl">Anjar Tiyo</a>
