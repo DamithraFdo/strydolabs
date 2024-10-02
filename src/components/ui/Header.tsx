@@ -1,52 +1,94 @@
-import Link from 'next/link'
-import React from 'react'
-import { Button } from './button';
-import Image from 'next/image';
+'use client'
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
 
-function Header() {
+const Navbar = () => {
+    const [nav, setNav] = useState(false);
+
+    const links = [
+        {
+            id: 1,
+            link: "hero",
+            navName: "home",
+        },
+        {
+            id: 2,
+            link: "about",
+            navName: "about",
+        },
+        {
+            id: 3,
+            link: "services",
+            navName: "services",
+        },
+        {
+            id: 4,
+            link: "team",
+            navName: "teams",
+        },
+        {
+            id: 5,
+            link: "testimonials",
+            navName: "experience",
+        },
+        {
+            id: 6,
+            link: "contact",
+            navName: "contact",
+        },
+    ];
+
     return (
-        <>
-            <div className="w-full h-[15vh] p-4 absolute top-0 mix-blend-difference" id='navbar'>
-                <div className="container flex flex-row justify-between align-middle items-center">
-                    <Link href={'/'}>
-                        <Image src="/img/strydo-logo.svg" alt="Strydo Labs Logo" width={75} height={75} />
-                    </Link>
-                    <ul className="nav-links flex flex-row gap-4 text-white font-bold">
-                        <Link className="" href="/">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                Home
-                            </Button>
-                        </Link>
-                        <Link className="" href="/about">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                About Us
-                            </Button>
-                        </Link>
-                        <Link className="" href="/about">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                Services
-                            </Button>
-                        </Link>
-                        <Link className="" href="/about">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                Projects
-                            </Button>
-                        </Link>
-                        <Link className="" href="/about">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                Teams
-                            </Button>
-                        </Link>
-                        <Link className="" href="/about">
-                            <Button variant={'ghost'} className='hover:bg-white text-md font-bold'>
-                                Contact
-                            </Button>
-                        </Link>
-                    </ul>
-                </div>
+        <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
+            <div>
+                <h1 className="text-5xl font-signature ml-2">
+                    <a
+                        className="link-underline link-underline-black"
+                        href=""
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Image src={'/img/strydo-logo.svg'} width={75} height={75} alt="Strydo Logo" />
+                    </a>
+                </h1>
             </div>
-        </>
-    )
-}
 
-export default Header;
+            <ul className="hidden md:flex">
+                {links.map(({ id, link, navName }) => (
+                    <li
+                        key={id}
+                        className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 hover:text-white duration-200 link-underline"
+                    >
+                        <Link href={'#' + link}>{navName}</Link>
+                    </li>
+                ))}
+            </ul>
+
+            <div
+                onClick={() => setNav(!nav)}
+                className="cursor-pointer pr-4 z-10 text-white md:hidden"
+            >
+                {nav ? <X size={30} /> : <Menu size={30} />}
+            </div>
+
+            {nav && (
+                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black text-white">
+                    {links.map(({ id, link }) => (
+                        <li
+                            key={id}
+                            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                        >
+                            <Link onClick={() => setNav(!nav)} href={link}>
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
+};
+
+export default Navbar;

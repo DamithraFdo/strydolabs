@@ -19,6 +19,7 @@ export default function Home() {
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
             <div className="my-[30px] sm:my-[60px]">
@@ -32,10 +33,10 @@ export default function Home() {
         </section>
 
         {/* About Us Section */}
-        <section id="about" className="snap-always snap-center bg-white bg-opacity-90 justify-between">
-          <div className="flex flex-col text-center align-middle h-screen justify-center p-4">
-            <h2 className="text-xl sm:text-3xl">About Strydo Labs</h2>
-            <div className="flex flex-col gap-3 text-[16px] sm:text-[18px] w-full sm:w-2/3 mx-auto text-justify">
+        <section id="about" className="snap-always snap-center hover:gap-4 bg-white bg-opacity-90 justify-between">
+          <div className="flex flex-col text-center align-middle h-screen justify-center p-4" id="about-paragraph">
+            <h2>About<br/> Strydo Labs</h2>
+            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide ">
               <p>
                 At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. Our mission is to push the boundaries by blending the physical and digital worlds.
               </p>
@@ -52,10 +53,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Section */}
-        <section id="services" className="snap-always snap-center bg-black bg-opacity-80 p-4">
-          <div className="flex flex-col text-center align-middle h-screen justify-center">
-            <h2 className="text-white text-xl sm:text-3xl">Our Services</h2>
+        {/* <!-- Services Section --> */}
+        <section id="services" className="snap-always snap-center">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4">
+            <h2 className="text-white mb-8">Our Services</h2>
             <Services />
           </div>
         </section>
@@ -68,45 +69,46 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section id="team" className="snap-always snap-center bg-black bg-opacity-90 text-white p-4">
-          <div className="flex flex-col text-center align-middle h-screen justify-center">
-            <h2 className="text-xl sm:text-3xl mb-4">Meet Our Team</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center p-4">
-              <Card className="p-4">
-                <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.jpeg" width={200} height={200} alt="Damithra" />
+        {/* <!-- Team Section --> */}
+        <section id="team" className="snap-always snap-center">
+          <div className="flex flex-col text-center items-center h-screen justify-center bg-black bg-opacity-90 text-white ">
+            <h2 className="mb-8">Meet<br/> Our Team</h2>
+            <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
+              <Card className="min-w-[300px] p-4">
+                <CardContent className="flex justify-center">
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra" />
                 </CardContent>
-                <CardDescription className="flex flex-col">
-                  <a className="text-black text-lg sm:text-xl">Damithra Fernando</a>
-                  <a>Founder & CEO</a>
+                <CardDescription className="flex flex-col items-center">
+                  <a className="text-black text-xl">Damithra Fernando</a>
+                  <a className="text-gray-400">Founder & CEO</a>
                 </CardDescription>
               </Card>
-              <Card className="p-4">
-                <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jpeg" width={200} height={200} alt="Satoshi" />
+
+              <Card className="min-w-[300px] p-4">
+                <CardContent className="flex justify-center">
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Anjar Tiyo" />
                 </CardContent>
-                <CardDescription className="flex flex-col">
-                  <a className="text-black text-lg sm:text-xl">Anjar Tiyo</a>
-                  <a>CTO</a>
+                <CardDescription className="flex flex-col items-center">
+                  <a className="text-black text-xl">Anjar Tiyo</a>
+                  <a className="text-gray-400">CTO</a>
                 </CardDescription>
               </Card>
-              <Card className="p-4">
-                <CardContent>
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Jovahir" />
+
+              <Card className="min-w-[300px] p-4">
+                <CardContent className="flex justify-center">
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Javohir" />
                 </CardContent>
-                <CardDescription className="flex flex-col">
-                  <a className="text-black text-lg sm:text-xl">Javohir</a>
-                  <a>App Developer</a>
+                <CardDescription className="flex flex-col items-center">
+                  <a className="text-black text-xl">Javohir</a>
+                  <a className="text-gray-400">App Developer</a>
                 </CardDescription>
               </Card>
             </div>
           </div>
         </section>
 
-        {/* Contact Section */}
         <section id="contact" className="snap-always snap-center">
-          <div className="flex flex-col w-full sm:w-1/3 text-left align-middle h-screen justify-center mx-4 sm:mx-8 my-auto">
+          <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
           <div className="p-4 text-center">
