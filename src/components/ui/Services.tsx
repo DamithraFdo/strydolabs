@@ -24,10 +24,9 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='flex flex-row gap-8 align-center text-center justify-center'>
+        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-x-auto scrollbar-hide'>
             {services.map((service, index) => (
-                <div className="relative text-center align-center gap-3 justify-center my-3 max-w-sm group" key={index}>
-                    {/* Image Section */}
+                <div className="relative text-center align-center gap-3 justify-center my-3 min-w-[300px] group" key={index}>
                     <Image
                         className="rounded-lg object-cover max-h-[400px] group-hover:scale-105 transition-transform duration-300"
                         src={service.img}
@@ -35,15 +34,14 @@ const Services = () => {
                         width={400}
                         height={300}
                     />
-
-                    {/* Overlay Text */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center scale-105 rounded-lg">
                         <h3 className="text-xl font-bold text-white">{service.serviceTitle}</h3>
-                        <p className="text-md text-white mt-2 mx-6">{service.description}</p>
+                        <div className="text-md text-white mt-2 mx-6">{service.description}</div>
                     </div>
                 </div>
             ))}
         </div>
+
     )
 }
 
