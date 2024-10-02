@@ -19,6 +19,7 @@ export default function Home() {
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
             <div className="my-[60px]">
@@ -34,7 +35,7 @@ export default function Home() {
         {/* About Us Section */}
         <section id="about" className="snap-always snap-center hover:gap-4 bg-white bg-opacity-90 justify-between">
           <div className="flex flex-col text-center align-middle h-screen justify-center p-4" id="about-paragraph">
-            <h2>About Strydo Labs</h2>
+            <h2>About<br/> Strydo Labs</h2>
             <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide ">
               <p>
                 At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. As a technology-driven startup, our mission is to push the boundaries of what iss possible by blending the physical and digital worlds. From designing intelligent robotic systems to building sophisticated IoT devices, we deliver high-performance products that meet the evolving needs of modern industries.
@@ -55,7 +56,7 @@ export default function Home() {
         {/* <!-- Services Section --> */}
         <section id="services" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4">
-            <h2 className="text-white">Our Services</h2>
+            <h2 className="text-white mb-8">Our Services</h2>
             <Services />
           </div>
         </section>
@@ -71,7 +72,7 @@ export default function Home() {
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
           <div className="flex flex-col text-center items-center h-screen justify-center bg-black bg-opacity-90 text-white ">
-            <h2 className="mb-4">Meet Our Team</h2>
+            <h2 className="mb-8">Meet<br/> Our Team</h2>
             <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
               <Card className="min-w-[300px] p-4">
                 <CardContent className="flex justify-center">
@@ -107,7 +108,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="snap-always snap-center">
-          <div className="flex flex-col w-1/3 text-left align-middle h-screen justify-center mx-8 my-auto">
+          <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
           <div className="p-4">

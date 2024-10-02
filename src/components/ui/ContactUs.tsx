@@ -6,7 +6,7 @@ import { Textarea } from './textarea'
 
 function ContactUs() {
   return (
-    <Card className="w-full">
+    <Card className="md:w-full w-5/6">
       <CardHeader>
         <CardTitle className='text-4xl font-[700]'>Contact Us</CardTitle>
         <CardDescription>Call us to get more details information.</CardDescription>
