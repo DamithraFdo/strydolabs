@@ -14,7 +14,7 @@ export default function Home() {
           muted
           loop
           autoPlay
-          className="fixed -top-2 left-0 w-full h-full -z-50 object-cover bg-black"
+          className="fixed top-0 left-0 w-full h-full -z-50 object-cover bg-black"
         >
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
@@ -22,11 +22,11 @@ export default function Home() {
         
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
-            <div className="my-[60px]">
-              <h2 className="text-white">Innovating Future Technology</h2>
-              <p className="text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
+            <div className="my-[30px] sm:my-[60px]">
+              <h2 className="text-white text-2xl sm:text-4xl">Innovating Future Technology</h2>
+              <p className="text-[16px] sm:text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
               <Link href={'/contact'}>
-                <Button className='mt-10 bg-transparent text-white font-bold w-48 h-16 text-lg' variant={'outline'}>Get Started</Button>
+                <Button className='mt-6 sm:mt-10 bg-transparent text-white font-bold w-36 sm:w-48 h-12 sm:h-16 text-md sm:text-lg' variant={'outline'}>Get Started</Button>
               </Link>
             </div>
           </div>
@@ -38,17 +38,17 @@ export default function Home() {
             <h2>About<br/> Strydo Labs</h2>
             <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide ">
               <p>
-                At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. As a technology-driven startup, our mission is to push the boundaries of what iss possible by blending the physical and digital worlds. From designing intelligent robotic systems to building sophisticated IoT devices, we deliver high-performance products that meet the evolving needs of modern industries.
+                At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. Our mission is to push the boundaries by blending the physical and digital worlds.
               </p>
               <p>
-                In addition to our core focus on hardware and robotics, we offer expert services in software development and game design, creating engaging digital experiences and streamlined solutions for businesses and consumers alike. With a commitment to innovation, quality, and precision, we strive to create technology that not only solves problems but also drives the future of automation and connectivity.
+                In addition to hardware and robotics, we offer expert services in software development and game design, creating engaging digital experiences for businesses and consumers alike.
               </p>
               <p className="font-bold">
                 At Strydo Labs, we are not just developing products—we are building the future.
               </p>
             </div>
             <Link className="mt-5" href={'/about'}>
-              <Button type='submit' className=" text-white font-bold w-48 h-16 text-lg">Learn More</Button>
+              <Button className="text-white font-bold w-36 sm:w-48 h-12 sm:h-16 text-md sm:text-lg">Learn More</Button>
             </Link>
           </div>
         </section>
@@ -61,10 +61,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimoni Section */}
-        <section id="testimonials" className="snap-always snap-center">
-          <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center bg-slate-200 bg-opacity-90">
-            <h2>What Our Clients Say</h2>
+        {/* Testimonials Section */}
+        <section id="testimonials" className="snap-always snap-center bg-slate-200 bg-opacity-90 p-4">
+          <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center">
+            <h2 className="text-xl sm:text-3xl">What Our Clients Say</h2>
             <TestimonialSlider />
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
-          <div className="p-4">
+          <div className="p-4 text-center">
             &copy; 2024 Strydo Labs | All rights reserved.
           </div>
         </section>
