@@ -42,7 +42,7 @@ const Navbar = () => {
 
     return (
         <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
-            <div>
+            <div className="hidden md:block">
                 <h1 className="text-5xl font-signature ml-2">
                     <a
                         className="link-underline link-underline-black"
@@ -51,6 +51,19 @@ const Navbar = () => {
                         rel="noreferrer"
                     >
                         <Image src={'/img/strydo-logo.svg'} width={150} height={100} alt="Strydo Logo" />
+                    </a>
+                </h1>
+            </div>
+
+            <div className="ml-2 md:hidden">
+                <h1 className="text-5xl font-signature ml-2">
+                    <a
+                        className="link-underline link-underline-black"
+                        href=""
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Image src={'/img/Jovahir.jpeg'} width={75} height={75} alt="Strydo Logo" />
                     </a>
                 </h1>
             </div>
@@ -75,13 +88,13 @@ const Navbar = () => {
 
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black text-white">
-                    {links.map(({ id, link }) => (
+                    {links.map(({ id, link,navName }) => (
                         <li
                             key={id}
                             className="px-4 cursor-pointer capitalize py-6 text-4xl"
                         >
                             <Link onClick={() => setNav(!nav)} href={link}>
-                                {link}
+                                {navName}
                             </Link>
                         </li>
                     ))}
