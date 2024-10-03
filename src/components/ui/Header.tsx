@@ -10,7 +10,7 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "hero",
+            link: "Home",
             navName: "home",
         },
         {
@@ -50,7 +50,7 @@ const Navbar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={'/img/strydo-logo.svg'} width={75} height={75} alt="Strydo Logo" />
+                        <Image src={'/img/strydo-logo.svg'} width={150} height={100} alt="Strydo Logo" />
                     </a>
                 </h1>
             </div>
