@@ -76,7 +76,7 @@ export default function Home() {
             <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
               <Card className="min-w-[300px] p-4">
                 <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.png" width={200} height={200} alt="Damithra" />
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Damithra.jpeg" width={200} height={200} alt="Damithra" />
                 </CardContent>
                 <CardDescription className="flex flex-col items-center">
                   <a className="text-black text-xl">Damithra Fernando</a>
@@ -86,7 +86,7 @@ export default function Home() {
 
               <Card className="min-w-[300px] p-4">
                 <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jfif" width={200} height={200} alt="Anjar Tiyo" />
+                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jpeg" width={200} height={200} alt="Anjar Tiyo" />
                 </CardContent>
                 <CardDescription className="flex flex-col items-center">
                   <a className="text-black text-xl">Anjar Tiyo</a>
