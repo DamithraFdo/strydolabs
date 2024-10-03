@@ -41,7 +41,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
+        <div className={`flex justify-between items-center w-full h-20 text-white fixed nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
             <div className="hidden md:block">
                 <h1 className="text-5xl font-signature ml-2">
                     <a
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </h1>
             </div>
 
-            <div className="ml-2 md:hidden">
+            <div className="md:hidden">
                 <h1 className="text-5xl font-signature ml-2">
                     <a
                         className="link-underline link-underline-black"
@@ -63,7 +63,7 @@ const Navbar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={'/img/Jovahir.jpeg'} width={75} height={75} alt="Strydo Logo" />
+                        <Image src={'/img/Strydolabs PNG White-01.svg'} width={70} height={70} alt="Strydo Logo" />
                     </a>
                 </h1>
             </div>
