@@ -1,3 +1,4 @@
+import AchievementSlider from "@/components/ui/Achievements";
 import ContactUs from "@/components/ui/ContactUs";
 import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
@@ -107,7 +108,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="snap-always snap-center">
+        {/* Achievemetns Section */}
+        <section id="achievements" className="snap-always snap-center bg-slate-200 bg-opacity-90 p-4">
+          <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center">
+            <h2 className="text-xl sm:text-3xl">Our Achievements</h2>
+            <AchievementSlider />
+          </div>
+        </section>
+
+        <section id="contact" className="snap-always snap-center bg-black bg-opacity-90">
           <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
