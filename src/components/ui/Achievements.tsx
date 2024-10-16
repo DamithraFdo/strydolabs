@@ -4,10 +4,31 @@ import Image from 'next/image';
 
 const testimonials = [
     {
-        name: 'Some Achievements',
+        name: 'Undergraduate Reasearch Symposium',
         title: 'Research Symposium',
         quote: `Best Research Award, 2024`,
-        image: `/img/dummy-600x400.png`,
+        image: `/img/research_symposium_2024.JPG`,
+    }
+    ,
+    {
+        name: 'Sri Lanka IoT Challange',
+        title: 'SLIoT Challange 2022',
+        quote: `2nd Runner Up, 2022`,
+        image: `/img/sliot_challange_2022.jpg`,
+    }
+    ,
+    {
+        name: 'Future Innovators Challange',
+        title: 'FINNC 2022',
+        quote: `2nd Runner Up, 2022`,
+        image: `/img/finnc_2023.jpg`,
+    }
+    ,
+    {
+        name: 'Apicta Nominee',
+        title: 'APICTA 2019',
+        quote: `The Asia Pacific ICT Alliance Awards Nominee`,
+        image: `/img/apicta_awards_2019.JPG`,
     }
 ];
 
