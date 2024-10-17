@@ -13,13 +13,13 @@ const testimonials = [
       name: 'Anjalika De Mel',
       role: 'Homeowner',
       quote: `"I hired Strydo Labs to automate my garden sprinklers, and it has been life-changing! Now, the garden is watered automatically at the perfect times, and I don’t have to worry about anything. Their automation solutions are brilliant!"`,
-      image: `/img/dummy.jpeg`,
+      image: `/img/anjalika.jpg`,
     },
     {
       name: 'Yasith Sirisena',
       role: 'CEO at Prodigi Interactive',
       quote: `"We consulted with Strydo Labs for the interactive wall project at Prodigi Interactive. Their insights and technical expertise were top-notch, and they helped bring our vision to life in the most efficient way possible. Highly recommend them for any tech-related consultancy!"`,
-      image: `/img/dummy.jpeg`,
+      image: `/img/yasith.jpg`,
     },
     {
       name: 'Ishara Senanayake',
@@ -34,16 +34,16 @@ const testimonials = [
       image: `/img/dummy.jpeg`,
     },
     {
-      name: 'Eranda Hashan',
+      name: 'Eranda Kasun',
       role: 'SLIIT Undergraduate',
       quote: `"Strydo Labs helped me develop a PIR sensor-based security system for my project. They provided me with the right technical insights and even helped me with troubleshooting. The system worked flawlessly, and I got excellent feedback from my professors!"`,
-      image: `/img/dummy.jpeg`,
+      image: `/img/eranda.jpg`,
     },
     {
-        name: 'Gayan Silva',
+        name: 'Roshen Anthony',
         role: 'Event Coordinator for Idealize Event',
         quote: `"StrydoPrint provided printing services for one of our biggest event. The quality of the prints was fantastic, and their delivery was on time. Definitely a reliable partner for any event printing needs."`,
-        image: `/img/dummy.jpeg`,
+        image: `/img/roshen.jpeg`,
     },
     {
       name: 'Mahesh Wijeratne',
