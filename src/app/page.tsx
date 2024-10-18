@@ -20,7 +20,7 @@ export default function Home() {
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
+
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
             <div className="my-[30px] sm:my-[60px]">
@@ -36,8 +36,8 @@ export default function Home() {
         {/* About Us Section */}
         <section id="about" className="snap-always snap-center hover:gap-4 bg-white bg-opacity-90 justify-between">
           <div className="flex flex-col text-center align-middle h-screen justify-center p-4" id="about-paragraph">
-            <h2>About<br/> Strydo Labs</h2>
-            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide ">
+            <h2>About Strydo Labs</h2>
+            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide mt-4">
               <p>
                 At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. Our mission is to push the boundaries by blending the physical and digital worlds.
               </p>
@@ -73,14 +73,14 @@ export default function Home() {
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
           <div className="flex flex-col text-center items-center h-screen justify-center bg-black bg-opacity-90 text-white ">
-            <h2 className="mb-8">Meet<br/> Our Team</h2>
-            <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
+            <h2 className="mb-8">Meet<br /> Our Team</h2>
+            <div className="flex flex-col overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center">
               <Founder />
-              <Link href={"/teams"} className="flex flex-row gap-3 hover:font-bold">
-                <ArrowRightCircle/>
-                View More
-              </Link>
             </div>
+            <Link href={"/teams"} className="flex flex-row gap-3 hover:font-bold mt-8">
+              <ArrowRightCircle />
+              View More
+            </Link>
           </div>
         </section>
 
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
-          <div className="p-4 text-center">
+          <div className="p-4 text-center text-white">
             &copy; 2024 Strydo Labs | All rights reserved.
           </div>
         </section>

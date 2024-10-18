@@ -35,11 +35,11 @@ const Founder = () => {
         },
     ]
     return (
-        <div className='flex flex-row overflow-x-scroll gap-10 text-center items-center justify-center p-4 '>
+        <div className='flex flex-row gap-8 align-center text-center md:justify-start justify-center'>
             {founders.map((founder) => (
                 <Link href={founder.link} key={founder.id}>
                     <Card className="min-w-[300px] p-4">
-                        <CardContent className="flex flex-col justify-center align-middle items-center">
+                        <CardContent className="flex flex-col justify-center items-center">
                             <Image
                                 className="hover:scale-105 rounded-lg mt-5"
                                 src={founder.img}
@@ -47,10 +47,8 @@ const Founder = () => {
                                 height={200}
                                 alt={founder.name}
                             />
-                            <CardDescription className="flex flex-col items-center mt-4">
-                                <a className="text-black text-xl">{founder.name}</a>
-                                <a className="text-gray-400">{founder.position}</a>
-                            </CardDescription>
+                                <div className="text-black text-xl mt-4">{founder.name}</div>
+                                <div className="text-gray-400">{founder.position}</div>
                         </CardContent>
                     </Card>
                 </Link>
