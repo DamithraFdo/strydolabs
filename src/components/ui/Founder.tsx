@@ -8,7 +8,7 @@ const Founder = () => {
         {
             id: 0,
             name: 'Damithra Fernando',
-            img: '/img/Damithra.jpeg',
+            img: '/img/damithranew.jpeg',
             position: 'Founder & CEO',
             link: '/',
         },
