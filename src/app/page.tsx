@@ -4,9 +4,7 @@ import Founder from "@/components/ui/Founder";
 import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { ArrowRightCircle } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
