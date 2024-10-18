@@ -1,10 +1,10 @@
 import AchievementSlider from "@/components/ui/Achievements";
 import ContactUs from "@/components/ui/ContactUs";
+import Founder from "@/components/ui/Founder";
 import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription } from "@/components/ui/card";
-import Image from "next/image";
+import { ArrowRightCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -20,13 +20,13 @@ export default function Home() {
           <source src='/img/bg-robo.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
+
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
             <div className="my-[30px] sm:my-[60px]">
               <h2 className="text-white text-2xl sm:text-4xl">Innovating Future Technology</h2>
               <p className="text-[16px] sm:text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
-              <Link href={'/contact'}>
+              <Link href={'/#about'}>
                 <Button className='mt-6 sm:mt-10 bg-transparent text-white font-bold w-36 sm:w-48 h-12 sm:h-16 text-md sm:text-lg' variant={'outline'}>Get Started</Button>
               </Link>
             </div>
@@ -36,8 +36,8 @@ export default function Home() {
         {/* About Us Section */}
         <section id="about" className="snap-always snap-center hover:gap-4 bg-white bg-opacity-90 justify-between">
           <div className="flex flex-col text-center align-middle h-screen justify-center p-4" id="about-paragraph">
-            <h2>About<br/> Strydo Labs</h2>
-            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide ">
+            <h2>About Strydo Labs</h2>
+            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide mt-4">
               <p>
                 At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. Our mission is to push the boundaries by blending the physical and digital worlds.
               </p>
@@ -73,38 +73,14 @@ export default function Home() {
         {/* <!-- Team Section --> */}
         <section id="team" className="snap-always snap-center">
           <div className="flex flex-col text-center items-center h-screen justify-center bg-black bg-opacity-90 text-white ">
-            <h2 className="mb-8">Meet<br/> Our Team</h2>
-            <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/damithranew.jpeg" width={200} height={200} alt="Damithra" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Damithra Fernando</a>
-                  <a className="text-gray-400">Founder & CEO</a>
-                </CardDescription>
-              </Card>
-
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jpeg" width={200} height={200} alt="Anjar Tiyo" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Anjar Tiyo</a>
-                  <a className="text-gray-400">CTO</a>
-                </CardDescription>
-              </Card>
-
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Javohir" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Javohir</a>
-                  <a className="text-gray-400">App Developer</a>
-                </CardDescription>
-              </Card>
+            <h2 className="mb-8">Meet<br /> Our Team</h2>
+            <div className="flex flex-col overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center">
+              <Founder />
             </div>
+            <Link href={"/teams"} className="flex flex-row gap-3 hover:font-bold mt-8">
+              <ArrowRightCircle />
+              View More
+            </Link>
           </div>
         </section>
 
@@ -120,7 +96,7 @@ export default function Home() {
           <div className="flex flex-col md:w-1/3 w-full items-center text-left align-middle h-screen justify-center md:mx-8 my-auto">
             <ContactUs />
           </div>
-          <div className="p-4 text-center">
+          <div className="p-4 text-center text-white">
             &copy; 2024 Strydo Labs | All rights reserved.
           </div>
         </section>
