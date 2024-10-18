@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import { Card, CardContent, CardDescription } from './card'
+import { Card, CardContent } from './card'
 
 const Founder = () => {
     const founders = [
