@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import { Card, CardContent } from './card'
+import { Card, CardContent, CardDescription } from './card'
 
 const Founder = () => {
     const founders = [
         {
             id: 0,
-            name: 'Damithra Fernandp',
+            name: 'Damithra Fernando',
             img: '/img/Damithra.jpeg',
             position: 'Founder & CEO',
             link: '/',
@@ -19,38 +19,43 @@ const Founder = () => {
             position: 'Co-Founder & CTO',
             link: '/',
         },
+        // {
+        //     id: 2,
+        //     name: 'John Doe',
+        //     img: '/img/Jovahir.jpeg',
+        //     position: 'Mobile Developer',
+        //     link: '/',
+        // }
         {
-            id: 2,
-            name: 'John Doe',
-            img: '/img/Jovahir.jpeg',
-            position: 'Mobile Developer',
+            id: 3,
+            name: 'TBA',
+            img: '/img/dummy.jpeg',
+            position: 'COO',
             link: '/',
-        }
+        },
     ]
     return (
-
-        <div className='flex flex-col overflow-x-scroll gap-10 text-center items-center justify-center p-4 '>
+        <div className='flex flex-row overflow-x-scroll gap-10 text-center items-center justify-center p-4 '>
             {founders.map((founder) => (
                 <Link href={founder.link} key={founder.id}>
-                    <Card className="p-4 w-full max-w-[300px] hover:scale-105">
-                        <CardContent className="flex justify-center items-center">
+                    <Card className="min-w-[300px] p-4">
+                        <CardContent className="flex flex-col justify-center align-middle items-center">
                             <Image
-                                className="rounded-lg"
+                                className="hover:scale-105 rounded-lg mt-5"
                                 src={founder.img}
                                 width={200}
                                 height={200}
                                 alt={founder.name}
                             />
-                            <a className="text-black text-xl">{founder.name}</a>
-                            <a>{founder.position}</a>
+                            <CardDescription className="flex flex-col items-center mt-4">
+                                <a className="text-black text-xl">{founder.name}</a>
+                                <a className="text-gray-400">{founder.position}</a>
+                            </CardDescription>
                         </CardContent>
                     </Card>
                 </Link>
             ))}
         </div>
-
-
-
     )
 }
 export default Founder

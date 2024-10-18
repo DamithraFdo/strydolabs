@@ -41,7 +41,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className={`flex justify-between items-center w-full h-20 text-white fixed nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
+        <div className={`flex justify-between items-center w-full h-20 text-white fixed nav mr-6 ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
             <div className="hidden md:block">
                 <h1 className="text-5xl font-signature ml-2">
                     <Link href={'/'}>

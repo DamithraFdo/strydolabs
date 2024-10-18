@@ -1,9 +1,11 @@
 import AchievementSlider from "@/components/ui/Achievements";
 import ContactUs from "@/components/ui/ContactUs";
+import Founder from "@/components/ui/Founder";
 import Services from "@/components/ui/Services";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { ArrowRightCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +28,7 @@ export default function Home() {
             <div className="my-[30px] sm:my-[60px]">
               <h2 className="text-white text-2xl sm:text-4xl">Innovating Future Technology</h2>
               <p className="text-[16px] sm:text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
-              <Link href={'/contact'}>
+              <Link href={'/#about'}>
                 <Button className='mt-6 sm:mt-10 bg-transparent text-white font-bold w-36 sm:w-48 h-12 sm:h-16 text-md sm:text-lg' variant={'outline'}>Get Started</Button>
               </Link>
             </div>
@@ -75,35 +77,11 @@ export default function Home() {
           <div className="flex flex-col text-center items-center h-screen justify-center bg-black bg-opacity-90 text-white ">
             <h2 className="mb-8">Meet<br/> Our Team</h2>
             <div className="flex overflow-x-auto scrollbar-hide p-4 w-full items-center justify-start md:justify-center space-x-4">
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/damithranew.jpeg" width={200} height={200} alt="Damithra" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Damithra Fernando</a>
-                  <a className="text-gray-400">Founder & CEO</a>
-                </CardDescription>
-              </Card>
-
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Anjar.jpeg" width={200} height={200} alt="Anjar Tiyo" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Anjar Tiyo</a>
-                  <a className="text-gray-400">CTO</a>
-                </CardDescription>
-              </Card>
-
-              <Card className="min-w-[300px] p-4">
-                <CardContent className="flex justify-center">
-                  <Image className="hover:scale-105 rounded-lg" src="/img/Jovahir.jpeg" width={200} height={200} alt="Javohir" />
-                </CardContent>
-                <CardDescription className="flex flex-col items-center">
-                  <a className="text-black text-xl">Javohir</a>
-                  <a className="text-gray-400">App Developer</a>
-                </CardDescription>
-              </Card>
+              <Founder />
+              <Link href={"/teams"} className="flex flex-row gap-3 hover:font-bold">
+                <ArrowRightCircle/>
+                View More
+              </Link>
             </div>
           </div>
         </section>
