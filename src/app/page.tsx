@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* <!-- Services Section --> */}
         <section id="services" className="snap-always snap-center">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 snap-x">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 overflow-scroll scroll-smooth scroll-hidden">
             <h2 className="text-white mb-8">Our Services</h2>
             <Services />
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
             <h2 className="mb-8">
               Meet<br /> Our Team
             </h2>
-            <div className="w-full overflow-x-auto flex justify-start snap-x scroll-smooth scrollbar-hide p-4">
+            <div className="w-full overflow-x-auto flex justify-start snap-x scroll-smooth scrollbar-hide p-4 md:justify-center">
               <Founder />
             </div>
             <Link href="/teams" className="flex flex-row gap-3 hover:font-bold mt-8">
