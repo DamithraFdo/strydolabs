@@ -42,7 +42,7 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-x-auto scrollbar-hide'>
+        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-scroll scrollbar-hide z-10'>
             {services.map((service, index) => (
                 <div className="relative text-center align-center gap-3 justify-center my-3 min-w-[300px] group" key={index}>
                     <Image
