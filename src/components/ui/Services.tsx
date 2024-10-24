@@ -5,44 +5,26 @@ const services = [
     {
         id: 0,
         serviceTitle: 'IoT Solutions',
-        img: '/img/Services/Electracker.jpg',
+        img: '/img/Electracker.jpg',
         description: 'Our IoT solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
     },
     {
         id: 1,
         serviceTitle: 'Robotics & AI Solutions',
-        img: '/img/Services/Robot.JPG',
+        img: '/img/Robot.JPG',
         description: 'Our Robotics & AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
     },
     {
         id: 2,
         serviceTitle: 'Software Development Solutions',
-        img: '/img/Services/Software.jpg',
+        img: '/img/Software.jpg',
         description: 'Our AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
-    },
-    {
-        id: 3,
-        serviceTitle: 'CCTV',
-        img: '/img/Services/cctv_insulation.jpg',
-        description: 'CCTV insulation',
-    },
-    {
-        id: 4,
-        serviceTitle: 'Solar',
-        img: '/img/Services/solar_insulation.jpg',
-        description: 'solar',
-    },
-    {
-        id: 5,
-        serviceTitle: '24X7 CCTV Insepection',
-        img: '/img/Services/cctv_inspection.jpg',
-        description: '24X7 Remote CCTV insepection service',
     }
 ]
 
 const Services = () => {
     return (
-        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-scroll scrollbar-hide z-10'>
+        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-x-auto scrollbar-hide'>
             {services.map((service, index) => (
                 <div className="relative text-center align-center gap-3 justify-center my-3 min-w-[300px] group" key={index}>
                     <Image
