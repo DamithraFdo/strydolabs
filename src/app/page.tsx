@@ -24,8 +24,8 @@ export default function Home() {
         <section id="hero" className="snap-always snap-center">
           <div className="flex flex-col h-screen w-screen gap-3 text-center align-middle justify-center p-4 bg-black bg-opacity-80">
             <div className="my-[30px] sm:my-[60px]">
-              <h2 className="text-white text-2xl sm:text-4xl">Innovating Future Technology</h2>
-              <p className="text-[16px] sm:text-[18px] mt-2 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
+              <h2 className="text-white">Innovating Future Technology</h2>
+              <p className="text-[16px] sm:text-[18px] mt-8 text-white">Empowering your ideas with cutting-edge IoT, robotics, and tech solutions.</p>
               <Link href={'/#about'}>
                 <Button className='mt-6 sm:mt-10 bg-transparent text-white font-bold w-36 sm:w-48 h-12 sm:h-16 text-md sm:text-lg' variant={'outline'}>Get Started</Button>
               </Link>
@@ -36,8 +36,8 @@ export default function Home() {
         {/* About Us Section */}
         <section id="about" className="snap-always snap-center hover:gap-4 bg-white bg-opacity-90 justify-between">
           <div className="flex flex-col text-center align-middle h-screen justify-center p-4" id="about-paragraph">
-            <h2>About Strydo Labs</h2>
-            <div className="flex flex-col gap-3 text-[18px] w-2/3 mx-auto text-justify overflow-x-auto scrollbar-hide mt-4">
+            <h2>About <br /> Strydo Labs</h2>
+            <div className="flex flex-col gap-3 text-[18px] w-5/6 mx-auto text-justify overflow-x-auto scrollbar-hide mt-4">
               <p>
                 At Strydo Labs, we are passionate innovators specializing in the development of cutting-edge robotics, advanced hardware, and integrated software solutions. Our mission is to push the boundaries by blending the physical and digital worlds.
               </p>
@@ -56,16 +56,18 @@ export default function Home() {
 
         {/* <!-- Services Section --> */}
         <section id="services" className="snap-always snap-center">
-          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 overflow-scroll scroll-smooth scroll-hidden">
+          <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 overflow-scroll scroll-smooth scroll-hidden snap-x">
             <h2 className="text-white mb-8">Our Services</h2>
-            <Services />
+            <div className="w-full overflow-x-auto flex justify-start snap-x scroll-smooth scrollbar-hide p-4 md:justify-center">
+              <Services />
+            </div>
           </div>
         </section>
 
         {/* Testimonials Section */}
         <section id="testimonials" className="snap-always snap-center bg-slate-200 bg-opacity-90 p-4">
           <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center">
-            <h2 className="text-xl sm:text-3xl">What Our Clients Say</h2>
+            <h2 className="">What Our Clients Say</h2>
             <TestimonialSlider />
           </div>
         </section>
@@ -89,7 +91,7 @@ export default function Home() {
         {/* Achievemetns Section */}
         <section id="achievements" className="snap-always snap-center bg-slate-200 bg-opacity-90 p-4">
           <div className="flex flex-col gap-2 text-center align-middle h-screen justify-center">
-            <h2 className="text-xl sm:text-3xl">Our Achievements</h2>
+            <h2 className="">Our Achievements</h2>
             <AchievementSlider />
           </div>
         </section>

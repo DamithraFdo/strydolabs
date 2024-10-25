@@ -42,17 +42,17 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='flex flex-row gap-8 align-center text-center md:justify-center justify-start overflow-scroll scrollbar-hide z-10'>
+        <div className='flex flex-row gap-8 align-center text-center justify-start overflow-scroll scrollbar-hide z-10'>
             {services.map((service, index) => (
                 <div className="relative text-center align-center gap-3 justify-center my-3 min-w-[300px] group" key={index}>
                     <Image
-                        className="rounded-lg object-cover max-h-[400px] group-hover:scale-105 transition-transform duration-300"
+                        className="rounded-lg object-cover max-h-[400px] transition-transform duration-300 group-hover:scale-105"
                         src={service.img}
                         alt={service.serviceTitle}
                         width={400}
                         height={300}
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center scale-105 rounded-lg">
+                    <div className="absolute inset-0 bg-black bg-opacity-50 transition-transform duration-300 flex flex-col justify-center items-center rounded-lg group-hover:scale-105">
                         <h3 className="text-xl font-bold text-white">{service.serviceTitle}</h3>
                         <div className="text-md text-white mt-2 mx-6">{service.description}</div>
                     </div>
