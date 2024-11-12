@@ -1,10 +1,33 @@
-import React from 'react'
+'use client'
+import React, { FormEvent } from 'react'
 import { Button } from './button'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card'
 import { Input } from './input'
 import { Textarea } from './textarea'
+import { Loader2 } from 'lucide-react'
 
 function ContactUs() {
+  const [sending, setSending] = React.useState(false);
+
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+    setSending(true)
+    const response = await fetch('https://formsubmit.co/strydolabs@gmail.com', {
+      method: 'POST',
+      body: formData,
+    })
+
+    const data = await response.json()
+
+    if(response.ok) {
+      setSending(false)
+      console.log('Data:', data)
+      return
+    }
+  }
+
   return (
     <Card className="md:w-full w-5/6">
       <CardHeader>
@@ -12,20 +35,26 @@ function ContactUs() {
         <CardDescription>Call us to get more details information.</CardDescription>
       </CardHeader>
       <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Input id="name" placeholder="Full Name" />
-              <Input id="email" type="email" placeholder="Email Address" />
-              <Input id="phone" type="tel" placeholder="Phone Number" />
-              <Textarea id="message" placeholder="Message" />
-            </div>
+        {sending ? (
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Loader2 className='animate-spin'/>
+            <p>Loading ...</p>
           </div>
-        </form>
+        ) : (
+          <form onSubmit={onSubmit}>
+            <div className="grid w-full items-center gap-4">
+              <div className="flex flex-col space-y-1.5">
+                <Input id="name" name='name' placeholder="Full Name" />
+                <Input id="email" name='email' type="email" placeholder="Email Address" />
+                <Input id="phone" name='phone' type="tel" placeholder="Phone Number" />
+                <Textarea id="message" name='message' placeholder="Message" />
+                <Button type='submit'>Submit</Button>
+              </div>
+            </div>
+          </form>
+        )
+        }
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button type='submit'>Submit</Button>
-      </CardFooter>
     </Card>
   )
 }
