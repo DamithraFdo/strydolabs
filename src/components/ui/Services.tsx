@@ -55,8 +55,8 @@ const Services = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-50 transition-transform duration-300 flex flex-col justify-center items-center rounded-lg group-hover:scale-105">
                         <h3 className="text-xl font-bold text-white">{service.serviceTitle}</h3>
                         {/* <div className="text-md text-white mt-2 mx-6">{service.description}</div> */}
-                        {service.description.map((desc)=>(
-                            <li className='text-md text-white'>{desc}</li>
+                        {service.description.map((desc, index)=>(
+                            <li className='text-md text-white' key={index}>{desc}</li>
                         ))}
                     </div>
                 </div>
