@@ -1,7 +1,7 @@
 'use client'
 import React, { FormEvent } from 'react'
 import { Button } from './button'
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card'
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from './card'
 import { Input } from './input'
 import { Textarea } from './textarea'
 import { Loader2 } from 'lucide-react'
