@@ -4,21 +4,21 @@ import Image from 'next/image';
 const services = [
     {
         id: 0,
-        serviceTitle: 'IoT Solutions',
+        serviceTitle: 'Hardware & Robotics Solutions',
         img: '/img/Services/Electracker.jpg',
-        description: ['Lorem 1','Lorem 1'],
+        description: ['Custom Hardware Design','Robotics Development & Automation','IoT Device Integration','Embedded Systems Engineering'],
     },
     {
         id: 1,
-        serviceTitle: 'Robotics & AI Solutions',
-        img: '/img/Services/Robot.JPG',
-        description: ['Our Robotics & AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.'],
+        serviceTitle: 'Software & Digital Solutions',
+        img: '/img/Services/Software.jpg',
+        description: ['Web & Mobile Application Development','Custom Software Solutions','Game Development','System Integration Services'],
     },
     {
         id: 2,
         serviceTitle: 'Software Development Solutions',
-        img: '/img/Services/Software.jpg',
-        description: ['Our AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.'],
+        img: '/img/Services/Robot.JPG',
+        description: ['Technical Consulting & Prototyping','Strydo Academy (STEM Workshops)','Product R&D Support','Digital Transformation Consulting'],
     },
     // {
     //     id: 3,
