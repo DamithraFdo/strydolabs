@@ -4,40 +4,40 @@ import Image from 'next/image';
 const services = [
     {
         id: 0,
-        serviceTitle: 'IoT Solutions',
+        serviceTitle: 'Hardware & Robotics Solutions',
         img: '/img/Services/Electracker.jpg',
-        description: 'Our IoT solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
+        description: ['Custom Hardware Design','Robotics Development & Automation','IoT Device Integration','Embedded Systems Engineering'],
     },
     {
         id: 1,
-        serviceTitle: 'Robotics & AI Solutions',
-        img: '/img/Services/Robot.JPG',
-        description: 'Our Robotics & AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
+        serviceTitle: 'Software & Digital Solutions',
+        img: '/img/Services/Software.jpg',
+        description: ['Web & Mobile Application Development','Custom Software Solutions','Game Development','System Integration Services'],
     },
     {
         id: 2,
         serviceTitle: 'Software Development Solutions',
-        img: '/img/Services/Software.jpg',
-        description: 'Our AI solutions enable businesses to automate their processes, improve efficiency, and enhance customer experiences.',
+        img: '/img/Services/Robot.JPG',
+        description: ['Technical Consulting & Prototyping','Strydo Academy (STEM Workshops)','Product R&D Support','Digital Transformation Consulting'],
     },
-    {
-        id: 3,
-        serviceTitle: 'CCTV',
-        img: '/img/Services/cctv_insulation.jpg',
-        description: 'CCTV insulation',
-    },
-    {
-        id: 4,
-        serviceTitle: 'Solar',
-        img: '/img/Services/solar_insulation.jpg',
-        description: 'solar',
-    },
-    {
-        id: 5,
-        serviceTitle: '24X7 CCTV Insepection',
-        img: '/img/Services/cctv_inspection.jpg',
-        description: '24X7 Remote CCTV insepection service',
-    }
+    // {
+    //     id: 3,
+    //     serviceTitle: 'CCTV',
+    //     img: '/img/Services/cctv_insulation.jpg',
+    //     description: 'CCTV insulation',
+    // },
+    // {
+    //     id: 4,
+    //     serviceTitle: 'Solar',
+    //     img: '/img/Services/solar_insulation.jpg',
+    //     description: 'solar',
+    // },
+    // {
+    //     id: 5,
+    //     serviceTitle: '24X7 CCTV Insepection',
+    //     img: '/img/Services/cctv_inspection.jpg',
+    //     description: '24X7 Remote CCTV insepection service',
+    // }
 ]
 
 const Services = () => {
@@ -54,7 +54,10 @@ const Services = () => {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 transition-transform duration-300 flex flex-col justify-center items-center rounded-lg group-hover:scale-105">
                         <h3 className="text-xl font-bold text-white">{service.serviceTitle}</h3>
-                        <div className="text-md text-white mt-2 mx-6">{service.description}</div>
+                        {/* <div className="text-md text-white mt-2 mx-6">{service.description}</div> */}
+                        {service.description.map((desc, index)=>(
+                            <li className='text-md text-white' key={index}>{desc}</li>
+                        ))}
                     </div>
                 </div>
             ))}
