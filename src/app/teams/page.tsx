@@ -6,26 +6,26 @@ const teamData = [
   {
     name: "Damithra Fernando",
     role: "CEO",
-    story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis vestibulum ullamcorper. Nullam in augue lacinia eros vestibulum aliquam. Donec quis dolor lacus. Duis magna libero, sodales ut orci non, vestibulum maximus odio. Curabitur risus sapien, hendrerit sit amet porttitor eu, tristique nec diam. Nulla porttitor fermentum nibh ut convallis. Sed tristique rhoncus nunc eu faucibus.",
-    image: "/img/dummy.jpeg",
+    story: "Aspiring Robotics Engineer with a strong foundation in electronics and coding. Currently pursuing a BICT (Hons) degree at the Rajarata University of Sri Lanka. Recognized as a hardware solution expert and a committed volunteer in STEM education. Possesses significant teaching experience, having delivered presentations and engaged with students on personal and career development. Passionate about inspiring young minds through innovative educational approaches and hands-on learning experiences.",
+    image: "/img/damithranew.jpeg",
   },
   {
     name: "Anjar Tiyo",
     role: "CTO",
     story: "",
-    image: "/img/dummy.jpeg",
+    image: "/img/Anjar.jpeg",
   },
   {
-    name: "Howard Ong",
-    role: "Job Position",
+    name: "TBA",
+    role: "COO",
     story: "",
     image: "/img/dummy.jpeg",
   },
   {
-    name: "Olivia Wilson",
-    role: "Job Position",
+    name: "Javohir",
+    role: "App Development",
     story: "",
-    image: "/img/dummy.jpeg",
+    image: "/img/Jovahir.jpeg",
   },
   // Add more team members as needed
   
