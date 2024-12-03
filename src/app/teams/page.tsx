@@ -28,6 +28,7 @@ const teamData = [
     image: "/img/dummy.jpeg",
   },
   // Add more team members as needed
+  
 ];
 
 export default function TeamPage() {
