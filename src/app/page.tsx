@@ -58,7 +58,7 @@ export default function Home() {
         <section id="services" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 overflow-scroll scroll-smooth scroll-hidden snap-x">
             <h2 className="text-white mb-8">Our Services</h2>
-            <div className="w-full overflow-x-auto flex justify-start snap-x scroll-smooth scrollbar-hide p-4 md:justify-center">
+            <div className="w-full overflow-x-auto flex justify-start snap-x p-4 md:justify-center">
               <Services />
             </div>
           </div>

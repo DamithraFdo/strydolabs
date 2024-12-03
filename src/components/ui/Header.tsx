@@ -10,7 +10,7 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "/",
+            link: "/#hero",
             navName: "home",
         },
         {
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className={`flex justify-between items-center w-full z-50 h-20 text-white fixed pr-4 nav ${nav ? "bg-black" : "bg-transparent mix-blend-difference"}`}>
             <div className="hidden md:block mt-4">
                 <h1 className="text-5xl font-signature ml-2">
-                    <Link href={'/'}>
+                    <Link href={'/#hero'}>
                         <Image src={'/img/strydo-logo.svg'} width={150} height={100} alt="Strydo Logo" />
                     </Link>
                 </h1>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             <div className="md:hidden mt-4">
                 <h1 className="text-5xl font-signature ml-2 font-bold">
-                    <Link href={'/'}>
+                    <Link href={'/#hero'}>
                         <Image src={'/img/Strydolabs PNG White-01.svg'} width={70} height={70} alt="Strydo Logo" />
                     </Link>
                 </h1>
