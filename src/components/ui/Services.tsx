@@ -16,7 +16,7 @@ const services = [
     },
     {
         id: 2,
-        serviceTitle: 'Software Development Solutions',
+        serviceTitle: 'Research, Consulting, & Education',
         img: '/img/Services/Robot.JPG',
         description: ['Technical Consulting & Prototyping','Strydo Academy (STEM Workshops)','Product R&D Support','Digital Transformation Consulting'],
     },
