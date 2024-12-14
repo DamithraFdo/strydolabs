@@ -12,7 +12,7 @@ const teamData = [
   {
     name: "Anjar Tiyo",
     role: "CTO",
-    story: "",
+    story: "Indonesia",
     image: "/img/Anjar.jpeg",
   },
   {
@@ -22,10 +22,22 @@ const teamData = [
     image: "/img/dummy.jpeg",
   },
   {
+    name: "Satoshi",
+    role: "Robo development and Marine Engineering",
+    story: "Japan",
+    image: "/img/satoshi.jpeg",
+  },
+  {
     name: "Javohir",
     role: "App Development",
-    story: "",
+    story: "Uzbekistan",
     image: "/img/Jovahir.jpeg",
+  },
+  {
+    name: "Christian",
+    role: "Software Engineer",
+    story: "Peru",
+    image: "/img/christian.jpeg",
   },
   // Add more team members as needed
   
