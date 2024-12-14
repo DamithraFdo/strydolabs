@@ -23,7 +23,7 @@ const teamData = [
   },
   {
     name: "Satoshi",
-    role: "Robo development and Marine Engineering",
+    role: "Robo Development and Marine Engineering",
     story: "Japan",
     image: "/img/satoshi.jpeg",
   },
@@ -35,7 +35,7 @@ const teamData = [
   },
   {
     name: "Christian",
-    role: "Software Engineer",
+    role: "Software Development",
     story: "Peru",
     image: "/img/christian.jpeg",
   },
