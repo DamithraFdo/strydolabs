@@ -2,6 +2,7 @@ import AchievementSlider from "@/components/ui/Achievements";
 import ContactUs from "@/components/ui/ContactUs";
 import Founder from "@/components/ui/Founder";
 import Services from "@/components/ui/Services";
+import SnowEffect from "@/components/ui/Snowflake";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRightCircle } from "lucide-react";
@@ -10,6 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+      <SnowEffect />
       <section className="flex flex-col">
         <video
           muted
