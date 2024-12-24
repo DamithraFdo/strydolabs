@@ -86,3 +86,19 @@ h3 {
   font-size: 24px;
   font-weight: 700;
 }
+
+.snowflake {
+  position: fixed;
+  top: 0;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
