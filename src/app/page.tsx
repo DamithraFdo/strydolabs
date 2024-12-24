@@ -2,6 +2,7 @@ import AchievementSlider from "@/components/ui/Achievements";
 import ContactUs from "@/components/ui/ContactUs";
 import Founder from "@/components/ui/Founder";
 import Services from "@/components/ui/Services";
+import SnowEffect from "@/components/ui/Snowflake";
 import TestimonialSlider from "@/components/ui/Testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRightCircle } from "lucide-react";
@@ -10,6 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+      <SnowEffect />
       <section className="flex flex-col">
         <video
           muted
@@ -58,7 +60,7 @@ export default function Home() {
         <section id="services" className="snap-always snap-center">
           <div className="flex flex-col text-center align-middle h-screen justify-center bg-black bg-opacity-80 p-4 overflow-scroll scroll-smooth scroll-hidden snap-x">
             <h2 className="text-white mb-8">Our Services</h2>
-            <div className="w-full overflow-x-auto flex justify-start snap-x scroll-smooth scrollbar-hide p-4 md:justify-center">
+            <div className="w-full overflow-x-auto flex justify-start snap-x p-4 md:justify-center">
               <Services />
             </div>
           </div>
