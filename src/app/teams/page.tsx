@@ -35,7 +35,7 @@ const teamData = [
   },
   {
     name: "Christian",
-    role: "Software Development",
+    role: "Software Development", 
     story: "Peru",
     image: "/img/christian.jpeg",
   },
