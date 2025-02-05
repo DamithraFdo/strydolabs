@@ -25,7 +25,7 @@ const teamData = [
     name: "Nimesh",
     role: "Head of the Design",
     story: "Japan",
-    image: "/img/Nimesh.jpeg",
+    image: "/img/Nimesh.png",
   },
   {
     name: "Satoshi",

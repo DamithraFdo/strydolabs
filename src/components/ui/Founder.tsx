@@ -28,8 +28,8 @@ const Founder = () => {
         // }
         {
             id: 3,
-            name: 'TBA',
-            img: '/img/dummy.jpeg',
+            name: 'Tharuka',
+            img: '/img/Tharuka.png',
             position: 'COO',
             link: '/',
         },
