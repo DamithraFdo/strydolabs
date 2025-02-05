@@ -16,10 +16,10 @@ const teamData = [
     image: "/img/Anjar.jpeg",
   },
   {
-    name: "TBA",
+    name: "Tharuka",
     role: "COO",
-    story: "",
-    image: "/img/dummy.jpeg",
+    story: "Cloud Engineer - Fresh BSc. (Hons) in Information Technology Graduate | Beta Microsoft Learn Student Ambassador | Postman Student Leader",
+    image: "/img/Tharuka.jpeg",
   },
   {
     name: "Nimesh",
